@@ -21,6 +21,8 @@ egg_file = [PhotoImage(file='egg1.png'), PhotoImage(file='egg2.png')]
 ch_x = WIDTH / 2
 ch_y = HEIGHT / 2
 score = 0
+
+
 class GameElement:
     pass
 
@@ -39,7 +41,7 @@ def create_egg():
     egg = c.create_image(ch_x + 10, ch_y + 40, image=egg_file[0])
     global score
     score += 1
-    c.update_idletasks()    
+    c.update_idletasks()
     c.itemconfig(egg, image=egg_file[1])
     c.update_idletasks()
 
